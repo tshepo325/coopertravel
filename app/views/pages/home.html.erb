@@ -1,7 +1,7 @@
 
     <section id="content-details" class="row clearfix">
         <article id="details-article" class="col-sm-8">
-            <h1 id="article-title">Your Product <span class="font-weight-light">Product Name</span></h1>
+            <h1 id="article-title">Package Name <span class="font-weight-light">Package Description</span></h1>
            
             <p>Lorem ipsum dolor sit amet, in nam feugiat eleifend. Sea an possit offendit definiebas, usu cu aeque mediocritatem. Vis constituam suscipiantur ad, cum duis concludaturque no. Sea vocent consulatu at.</p>
 
@@ -29,6 +29,7 @@
 				  		<%= hidden_field_tag 'amount', 499 %>
 				  		<%= hidden_field_tag 'stripeEmail' %>
 				  		<button id="btn-buy" type="button" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>Buy this!</button>
+
 				<script>
 					var handler = StripeCheckout.configure({
 						key: '<%= Rails.configuration.stripe[:publishable_key] %>',
